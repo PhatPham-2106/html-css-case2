@@ -1,0 +1,95 @@
+/*sets*/
+@font-face {
+    font-family: commonfont;
+    src: url(Old_Standard_TT/OldStandardTT-Regular.ttf);
+}
+
+
+
+body{
+    background-color: rgb(56,56,59);
+    font-family: commonfont;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.headrow{
+    z-index: 1;
+
+
+   width: 100.7%;
+    transition: 0.3s ;
+    height: 60px;
+    position: relative;
+}
+.headrow:hover{
+  opacity: 1;
+    background:rgb(49, 49, 49);
+}
+.headrow:hover a, .headrow:hover i{
+    color: rgb(231, 231, 231);
+    transition: 0.3s;
+}
+
+.elements a, .text-head a, .icons i{
+    color:white;
+    
+}
+.elements a, .icons i{
+    font-size: 18px;
+    margin-right: 5%;
+}
+a:hover, a:visited{
+    text-decoration: none;
+    
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+/*sets*/
+/*shop*/
+.card{
+    padding: 0;
+    
+    cursor: pointer;
+    transition: 0.3s;
+}
+.card:hover{
+   transform: translateY(-15px);
+    filter: brightness(120%);
+  
+
+  box-shadow: 10px 10px rgba(22, 22, 22, 0.87);
+}
+.board, .foot, .first-text{
+    animation-timing-function: linear;
+    animation: start 0.8s;
+}
+@keyframes start{
+    from{ 
+        transform: translateY(-15px);
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+        transform: translateY(15px);
+    }
+}
+/*shop*/
+/*journal*/
+.journal-img-text, .journal-img{
+    animation-timing-function: linear;
+    cursor: pointer;
+    animation: start 0.8s;
+}
+.gif{
+    scale: 0.7;
+}
+.journal-content{
+    height: 800px;
+}
+/*journal*/
+/*contact*/
+/*contact*/

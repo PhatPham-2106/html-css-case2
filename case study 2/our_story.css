@@ -1,0 +1,141 @@
+/*sets*/
+@font-face {
+    font-family: commonfont;
+    src: url(Old_Standard_TT/OldStandardTT-Regular.ttf);
+}
+
+
+
+body{
+    background-color: rgb(56,56,59);
+    font-family: commonfont;
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+.headrow{
+    z-index: 1;
+
+
+   width: 100.7%;
+    transition: 0.3s ;
+    height: 60px;
+    position: relative;
+}
+.headrow:hover{
+  opacity: 1;
+    background:rgb(49, 49, 49);
+}
+.headrow:hover a, .headrow:hover i{
+    color: rgb(231, 231, 231);
+    transition: 0.3s;
+}
+
+.elements a, .text-head a, .icons i{
+    color:white;
+    
+}
+.elements a, .icons i{
+    font-size: 18px;
+    margin-right: 5%;
+}
+a:hover, a:visited{
+    text-decoration: none;
+    
+}
+
+.icons i{
+    cursor: pointer;
+}
+
+/*sets*/
+.down-arrow{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    top: 90%;
+    left: 5%;
+   font-size: 35px;
+   animation: arrowanimation 0.7s  infinite ease;
+
+}
+.down-arrow:hover{
+    animation-play-state: paused;
+}
+.down-arrow2{
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    cursor: pointer;
+    top: 190%;
+    left: 5%;
+   font-size: 35px;
+   animation: arrowanimation 0.7s  infinite ease;
+
+}
+.down-arrow2:hover{
+    animation-play-state: paused;
+}
+@keyframes page2{
+    from{
+        opacity: 0;
+        scale: 0.3;
+    }
+    to{
+        opacity: 1;
+        scale: 1;
+    }
+}
+@keyframes arrowanimation{
+    form
+    {
+       
+        transform: translateY(-40px);
+
+    }
+    to{
+        opacity: 1;
+        transform: translateY(40px);
+    }
+}
+.page3{
+    width: 100%;
+    height: 1000px;
+    background:rgb(168,166,161);
+}
+.page3-row{
+    margin: 0;
+    padding: 6%;
+    width: 100%;
+    height: 100%;
+}
+.page3-row-image{
+    background-image: url(img/plan-texture);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.page3-col61, .page3-col62{
+    margin:20px;
+}
+
+@keyframes page3col61{
+    from{
+        transform: translateX(-30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateX(30px);
+        opacity: 1;
+    }
+}
+@keyframes page3col62{
+    from{
+        transform: translateY(30px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(-30px);
+        opacity: 1;
+    }
+}
